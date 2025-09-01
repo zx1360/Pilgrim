@@ -1,0 +1,1 @@
+import{_ as c}from"./index-C9jkMtV2.js";import"./vue-router-DQhqLy48.js";import"./@vue-CrxPK7X6.js";import"./pinia-BiUrJzFP.js";const r={};function o(t,e){return" comic "}const s=c(r,[["render",o]]);export{s as default};

@@ -1,0 +1,1 @@
+import{_ as e}from"./index-C9jkMtV2.js";import{q as r,v as o}from"./@vue-CrxPK7X6.js";import"./vue-router-DQhqLy48.js";import"./pinia-BiUrJzFP.js";const t={},c={src:"/index_BG/index.html",frameborder:"0"};function n(_,a){return o(),r("iframe",c)}const f=e(t,[["render",n],["__scopeId","data-v-447ba14f"]]);export{f as default};

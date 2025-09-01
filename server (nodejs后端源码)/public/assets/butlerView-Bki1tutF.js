@@ -1,0 +1,1 @@
+import{_ as e}from"./index-C9jkMtV2.js";import{q as r,v as t}from"./@vue-CrxPK7X6.js";import"./vue-router-DQhqLy48.js";import"./pinia-BiUrJzFP.js";const o={};function c(n,s){return t(),r("h1",null,"butler")}const f=e(o,[["render",c]]);export{f as default};

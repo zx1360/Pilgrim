@@ -1,0 +1,1 @@
+import{_ as r}from"./index-C9jkMtV2.js";import"./vue-router-DQhqLy48.js";import"./@vue-CrxPK7X6.js";import"./pinia-BiUrJzFP.js";const o={};function t(e,c){return" movie "}const s=r(o,[["render",t]]);export{s as default};
