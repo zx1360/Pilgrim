@@ -1,0 +1,90 @@
+/* 所有标签的内外边距清零 */
+*{
+    margin: 0;
+    padding: 0;
+    /* 盒子模型 */
+    box-sizing: border-box;
+}
+html{
+    /* 字体大小默认16px, 此处设为10px, 则1rem=10px */
+    font-size: 62.5%;
+    /* 平滑移动(需自定义 */
+    /* scroll-behavior: smooth; */
+
+    /* 文本是否可被选择 */
+    user-select: none;
+}
+
+fieldset{
+    border: 0;
+}
+textarea{
+    outline: 0;
+    resize: none;
+}
+
+/* 清除li小圆点 */
+li{
+    list-style: none;
+}
+img{
+    /* 防止低版本图片带有外部链接会有边框 */
+    border: 0;
+    /* 防止底部有空白缝隙 */
+    vertical-align: middle;
+    /* 默认保持比例下覆盖容器(可能有裁剪) */
+    object-fit: cover;
+}
+/* 鼠标经过button改为小手 */
+button{
+    cursor: pointer;
+}
+/* 取消未点链接的蓝色和已点链接的灰色 */
+a{
+    text-decoration: none;
+}
+
+
+
+/* 关于滚动条的样式 */
+/* 整体 上下按钮 整个轨道 除thumb以外轨道 当前轨道thumb 角落(如xy都有滚动条时) */
+::-webkit-scrollbar
+{
+   width: 1.6rem;
+}
+
+::-webkit-scrollbar-button{
+    display: none;
+}
+
+::-webkit-scrollbar-track
+{
+    box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius:10px;
+    background-color:black;
+}
+
+::-webkit-scrollbar-track-piece{
+   background-color: #666;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius:10px;
+    box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+    background-color:#555;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+    background-color:#3d3c3c;
+}
+
+::-webkit-scrollbar-corner{
+   display: none;
+}
+
+.none{
+    display: none;
+}

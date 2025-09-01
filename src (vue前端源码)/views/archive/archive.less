@@ -1,0 +1,275 @@
+// 标题大字
+.title_box{
+  margin: 3rem 0;
+  .title{
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #5cd697;
+    cursor: pointer;
+  }
+}
+
+
+
+// 写入容器
+.write_box{
+  position: absolute;
+  left: 50%;
+  translate: (-50%);
+  margin: 5% auto;
+
+  padding: 2rem;
+  width: 95%;
+  height: 85%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #1e1e1e;
+  color: #deb887;
+  opacity: 0.95;
+  border-radius: 2rem;
+  .close{
+    position: absolute;
+    right: 4px;
+    top: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.2rem;
+    height: 4.2rem;
+
+    border-radius: 50%;
+    font-size: 3.6rem;
+    cursor: pointer;
+  }
+  .submit{
+    position: absolute;
+    right: 4px;
+    bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.2rem;
+    height: 4.2rem;
+
+    font-size: 3.6rem;
+    cursor: pointer;
+    border-radius: 4px;
+    &:hover{
+      border-left: 2px solid #deb887;
+      border-bottom: 2px solid #deb887;
+    }
+    &.inactive{
+      pointer-events: none;
+    }
+  }
+  // 写入文本部分
+  .content{
+    flex-grow: 1;
+    margin: 3.2rem auto;
+    height: 55%;
+    width: 88%;
+
+    border-radius: 1.2rem;
+    font-size: 2.4rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #deb887;
+  }
+}
+// 写入图片与标签相关
+.bottom{
+  flex-shrink: 0;
+  margin-bottom: 1.2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  
+  width: 88%;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+.pic_relates{
+  display: flex;
+  flex-wrap: wrap;
+  width: 64%;
+  min-height: 12rem;
+
+  &.hasImage{
+    min-height: 8rem;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  .pic{
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    max-height: 32rem;
+    object-fit: contain;
+    background-color: rgba(114, 98, 99, 0.42);
+    border-radius: 8px;
+    overflow: hidden;
+    img{
+      width: 16rem;
+    }
+  }
+  .pic_btn{
+    margin: auto 0.4rem 0.4rem auto;
+    color: blanchedalmond;
+    input{
+      display: none;
+    }
+    label{
+      font-size: 3.2rem;
+      cursor: pointer;
+    }
+  }
+}
+.vertical_line{
+  width: 0.4rem;
+  border-radius: 0.2rem;
+  margin: 0 1rem;
+  background-color: #c6c5b8;
+}
+.label_box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  width: 35%;
+  min-height: 12rem;
+  .label_appended{
+    display: flex;
+    justify-content: space-around;
+
+    margin: 0 4% 1rem;
+    width: 42%;
+    height: 2.7rem;
+    line-height: 2.7rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    span{
+      cursor: pointer;
+    }
+  }
+  .label_append{
+    display: flex;
+    margin: auto 4% 0px auto;
+    padding: 0.4rem;
+    width: 20rem;
+    span{
+      font-size: 2.1rem;
+      padding: 0.2rem;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+// 标签栏
+.tag_box{
+  height: 5rem;
+}
+
+
+
+// archives视图
+.archive_box{
+  width: 100%;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.year_box{
+  display: flex;
+  align-items: start;
+
+  padding-right: 10%;
+  overflow-y: hidden;
+  .year{
+    margin-right: 2.4rem;
+    padding-bottom: 0.4rem;
+
+    border-bottom: 4px solid #deb887;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    color: #deb887;
+    cursor: pointer;
+  }
+  .overview{
+    width: 100%;
+    min-height: 3.2rem;
+
+    color: #deb887;
+    line-height: 3.2rem;
+    font-size: 2.1rem;
+  }
+  .archives{
+    width: 100%;
+  }
+}
+.archive{
+  display: flex;
+  width: 100%;
+  .time_axis{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding-right: 1rem;
+  }
+  /* 伪元素形成时间轴的圆点和线 */
+  .time_axis::before{
+    content: "";
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%; 
+    background-color: #bbb;
+  }
+  .time_axis::after{
+    content: "";
+    flex-grow: 1;
+    margin: 0.5rem 0 0.2rem;
+    border-left: .2rem solid #bbb;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+  }
+  .date{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: gray;
+  }
+  .text{
+    margin: 1.2rem 0;
+    font-size: 1.8rem;
+    color: rgb(190, 159, 120);
+  }
+
+  .appendix{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    .labels{
+      display: flex;
+      align-items: center;
+      font-size: 2.4rem;
+      color: #deb887;
+    }
+    .archive_showImage{
+      margin-left: 3.2rem;
+      font-size: 2.7rem;
+      color: #deb887;
+      cursor: pointer;
+    }
+  }
+}

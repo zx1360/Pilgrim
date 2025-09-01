@@ -1,0 +1,11 @@
+/* iconfont字体图标 */
+@font-face {
+  font-family: 'iconfont';
+  src: url('/fonts/iconfont.woff2?t=1704758696212') format('woff2'),
+       url('/fonts/iconfont.woff?t=1704758696212') format('woff'),
+       url('/fonts/iconfont.ttf?t=1704758696212') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont";
+}
